@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicaronas</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../../../src/assets/img/UniFioLogo.png" alt="Logo Unicaronas">
+      <h1>Unicaronas</h1>
+      <p>Caronas universitárias</p>
+      <button class="button" id="CadastrarCarona" onclick="alert('Cadastro Realizado!')">Cadastrar carona</button>
+      <button class="button">Procurar carona</button>
+    </header>
+
+    <section class="testimonials">
+      <h2>Avaliações</h2>
+      <p>Veja o que nossos usuários tem a dizer!</p>
+      <div class="testimonials-grid">
+        <div *ngFor="let testimonial of testimonials" class="testimonial">
+          <img [src]="testimonial.avatar" alt="Avatar de {{testimonial.name}}">
+          <p>{{testimonial.text}}</p>
+          <h3>{{testimonial.name}}</h3>
+          <div class="rating">
+            <span *ngFor="let rating of testimonial.ratings; let i = index">
+              <i class="fas fa-star" [class.active]="i < testimonial.rating"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

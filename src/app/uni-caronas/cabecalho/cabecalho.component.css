@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  align-items: center;
+  padding:2.5rem;
+  background-color: #2623DA; 
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1; 
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: auto; 
+  height: auto; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.actions button {
+  margin-right: 10px;
+}
